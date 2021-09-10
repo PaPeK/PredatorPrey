@@ -15,11 +15,20 @@ For a full mathematical description of the stochastic differential equations and
 
 ## Required C++ libraries:
 
+### LINUX
 next to standard C libraries the following libraries need to be installed via ``apt-get install``'
 
 - libhdf5-serial-dev
 - libgsl-dev
 - libcgal-dev
+
+### MAC
+the needed libraries can be installed via homebrew:
+
+- brew install hdf5
+- brew install gsl
+- brew install cgal
+
 
 ### Docker-alternative
 

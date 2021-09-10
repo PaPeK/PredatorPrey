@@ -61,11 +61,6 @@ std::vector<unsigned int> GetPredVoronoiNN(std::vector<particle> &, params *,
                  predator *,  std::vector<int> &nodes);   // returns prey indices which are voronoi nn to pred of prey in nodes
 std::vector<int> GetPredKnn(std::vector<particle> &, params *, predator *,
                  unsigned int K, std::vector<int> &nodes);  // returns vector of indices to K nn of pred of prey in nodes
-std::vector<int> GetPredCircleSeg(std::vector<particle> &, params *, predator *,
-                 std::vector<int> &nodes); // vector of indices of prey in circle segment in front of pred of prey in nodes
-//finds indices of Prey in circle around Predator:
-std::vector<int> GetPredCircleSeg(std::vector<particle> &a, params *ptrSP, predator *pred, 
-                                  double radius, double angle, std::vector<int> &nodes);
 // finds 2NN of F which see P (saved in pred->NN2set)
 double DistP2AlphaShape(std::vector<particle> &a, predator *pred, params *);
 void split_dead(std::vector<particle> &a, std::vector<particle> &d, std::vector<predator> &preds);
